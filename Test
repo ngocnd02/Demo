@@ -1,0 +1,17 @@
+#Chương 1: Giới thiệu về tiến trình
+##1-Thuật ngữ. 
+####1.1 Process
+- Là tiến trình được biên dịch mã nguồn đang chạy trên hệ thống. 
+####1.2 PID
+- Tất cả các tiến trình đều có một process id or PID
+####1.3 PPID
+- Mỗi tiến trình có một tiến trình cha (với một PPID). Tiến trình con thường bắt đầu bởi tiến trình 
+cha, ngoại trừ tiến trình gốc (PID 1) có thể không có cha, nhưng nó là tiến trình khởi đầu cho hệ
+thống.
+####1.4 Init
+- Tiến trình init luôn luôn có process ID là 1. Tiến trình init được khởi động bởi chính kernal, nên 
+về mặt kĩ thuật nó không có tiến trình cha. 
+####1.5 Kill
+- Khi một tiến trình ngừng chạy, tiến trình đó sẽ chết, khi bạn muốn loại bỏ một tiến trình, bạn sẽ
+kill nó. 
+- Cú pháp: kill [OPTIONS] PID
